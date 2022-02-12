@@ -1,0 +1,7 @@
+For User api.
+
+1. Create User model - done
+2. Create mongodb - done
+3. Connect to mongodb - done
+4. Create repository to add user to db - 
+5. Call repository from controller.
