@@ -12,3 +12,5 @@ User Module
 11. Get list of followers -Get
 12. Add blue tick - Post
 13. Block a user.- Post
+
+Client->Index(middleware)-> Route-> Controller -> Repo-> Controller -> Client
