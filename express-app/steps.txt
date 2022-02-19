@@ -5,3 +5,29 @@ For User api.
 3. Connect to mongodb - done
 4. Create repository to add user to db - 
 5. Call repository from controller.
+
+19-feb 
+1. Middleware in NodeJS
+2. Write a custom Middleware
+3. Implement Authentication.
+4. Make"Create Tweet" api secure.
+- Only logged i user can tweet.
+5. Authentication & Authorization.
+6. Login API.
+
+How it is work?
+- First, user will login.
+- On Login, user will receive a token
+- Tweet using the token.
+- Without token, authorized.
+- Token Based Authentication.
+
+Authentication
+    Get an ID(Access cards).
+    Can't get into company.
+
+Authorization.
+    Related to responsibilities.
+    Developer  ->Not authorized to process salary
+    HR-> Not authorized to access client prod env.
+    Manager -> Authorized toapprove holidays.
