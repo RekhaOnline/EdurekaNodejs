@@ -2,6 +2,10 @@
 const db = require("../../config/mongodb");
 const { ObjectId } = require("mongodb");
 
+const getUserCollection = ()=> {
+    return db.getCollection("user");
+}
+
 // model - user data
 // cb - callback to invoke after data is added
 exports.add = (model, cb)=>{
@@ -42,4 +46,26 @@ exports.getByID=(id,cb)=>{
         (user)=>cb(user),
         err=>{console.log(err)});
     
+}
+
+exports.delete=(id,cb)=>{
+    //Step1: Get collection
+    const collection =db.getCollection("user");
+
+    //Step2: Find data
+    collection.deleteOne({_id:ObjectId(id)})
+    .then(
+        ()=>cb(),
+        err=>{console.log(err)});
+    
+}
+
+exports.getByEmail = (email, cb)=>{
+    getUserCollection().findOne({email})
+        .then(
+            (record)=>{
+                cb(record);
+            },
+            err=> {console.log(err)}
+        )
 }

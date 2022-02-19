@@ -20,6 +20,7 @@
 const express = require("express");
 const userAuthRoutes = require("./user/routes/user-auth-routes");
 const userRoutes = require("./user/routes/user-routes");
+const tweetRoutes = require("./tweet/routings/tweet");
 const bodyParser = require("body-parser");
 const mongodb = require("./config/mongodb");
 
@@ -41,6 +42,7 @@ server.use(bodyParser.json());
 //Routings.
 server.use("/api/user/auth",userAuthRoutes);
 server.use("/api/user/", userRoutes);
+server.use("/api/tweet", tweetRoutes);
 server.use((req, res)=>{
     res.status(404).send("Please check your path");
 })

@@ -31,3 +31,7 @@ Authorization.
     Developer  ->Not authorized to process salary
     HR-> Not authorized to access client prod env.
     Manager -> Authorized toapprove holidays.
+
+Handling Error.
+Handle error anywhere in app.
+log that into a file.

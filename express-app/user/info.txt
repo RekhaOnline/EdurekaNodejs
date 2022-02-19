@@ -1,13 +1,13 @@
 User Module
-1. Create a User - Post - /auth/register
-2. Update a User - Put
-3. Delete a User - Delete
-4. Report a User - Post
+1. Create a User - Post - /auth/register - done
+2. Update a User - Put - done
+3. Delete a User - Delete - done
+4. Report a User - Post (UserReports ->{userid, reportedbyuserid, timestamp,})
 5. Follow a User- Post
 6. Unfollow a User- Put
-7. Login a User - Post -/auth/login
+7. Login a User - Post -/auth/login - 
 8. Logout a User - Post
-9. Get user details -Get
+9. Get user details -Get - done
 10. Search a User -Get
 11. Get list of followers -Get
 12. Add blue tick - Post
