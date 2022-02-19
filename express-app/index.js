@@ -23,6 +23,7 @@ const userRoutes = require("./user/routes/user-routes");
 const tweetRoutes = require("./tweet/routings/tweet");
 const bodyParser = require("body-parser");
 const mongodb = require("./config/mongodb");
+const errorHandler = require("./middlewares/error-handler");
 
 //Step2: Create Server
 const server =express();
