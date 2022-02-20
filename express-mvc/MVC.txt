@@ -1,0 +1,4 @@
+MVC (Model - view - Controller) - pattern
+
+Pattern/Architectural pattern to create web applications.
+Intro.
