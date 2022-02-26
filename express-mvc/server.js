@@ -1,5 +1,6 @@
 const express = require("express");
 const userRoutes = require("./src/user/routes/user");
+const tweetRoutes = require("./src/tweet/routes/tweetRoutes");
 const path = require("path");
 const bodyParser = require("body-parser");
 const mongodb = require("./config/mongodb");
@@ -18,6 +19,7 @@ mongodb.connect();
 server.use(bodyParser.urlencoded({extended: false}));
 
 server.use("/user/", userRoutes);
+server.use("/tweet/", tweetRoutes);
 
 server.listen(3000);
 server.get("/", (req, res)=>{
