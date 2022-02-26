@@ -44,9 +44,12 @@ server.use(bodyParser.json());
 server.use("/api/user/auth",userAuthRoutes);
 server.use("/api/user/", userRoutes);
 server.use("/api/tweet", tweetRoutes);
+
+server.use(errorHandler);
+
 server.use((req, res)=>{
     res.status(404).send("Please check your path");
-})
+});
 
 //Step4: Handle the default  request  - / is empty path
 server.get("/",(req,res)=>{

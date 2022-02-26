@@ -1,0 +1,14 @@
+1.  User registration screen.
+    localhost:3000/user/register
+2.  User login screen.
+3.  Show user's tweets.
+4.  Allow user to post new tweet.
+
+5. Retweet, love tweet , share ..
+
+02/26
+------
+0. Add Session to get user's id.
+1. Add Controller for tweets.
+2. Add repo to get tweets of user.
+3. Create view to display tweets.
