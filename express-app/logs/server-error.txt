@@ -1,0 +1,11 @@
+SyntaxError: Unexpected token } in JSON at position 40
+SyntaxError: Unexpected token } in JSON at position 40
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\rekha\OneDrive\Desktop\Learning\NodeJs\EdurekaNodejs\express-app\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\rekha\OneDrive\Desktop\Learning\NodeJs\EdurekaNodejs\express-app\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Users\rekha\OneDrive\Desktop\Learning\NodeJs\EdurekaNodejs\express-app\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\rekha\OneDrive\Desktop\Learning\NodeJs\EdurekaNodejs\express-app\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\rekha\OneDrive\Desktop\Learning\NodeJs\EdurekaNodejs\express-app\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:402:35)
+    at endReadableNT (node:internal/streams/readable:1343:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
