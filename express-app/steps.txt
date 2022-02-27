@@ -35,3 +35,14 @@ Authorization.
 Handling Error.
 Handle error anywhere in app.
 log that into a file.
+
+
+Docker.
+- COntainerization or Virtualization.
+- Stable config.
+- Docker Image - template of cofigs.
+    docker build.
+- RUn image in docker container.
+
+MAcBook - 8080
+Container - NodeApp (8090)
